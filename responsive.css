@@ -1,0 +1,24 @@
+@media screen and (max-width:575px){
+    .song-card{
+        width: 310px !important;
+    }
+    .image{
+        width: 265px !important;
+    }
+    #volume{
+        right: 1.5rem !important;
+    }
+    i:not(#volume,#download){
+        font-size: 45px !important;
+        margin: 10px 26px !important;
+    }
+    .slider{
+        width: 90% !important;
+    }
+    .song-name{
+        font-size: 33px !important;
+    }
+   #download{
+       font-size: 25px !important;
+   }
+}
