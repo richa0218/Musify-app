@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" type="image/x-icon" href="Songs/Images/favicon.png" />
+    <title>Music-app</title>
+    <link rel="stylesheet" href="responsive.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+  <div title="PlayList" class="list"></div>
+    <h1>Musify-app</h1>
+    <div class="song-card">
+     <div class="volumeDiv">
+       <span class="visibility" id="volumeValue">100%</span>
+       <input type="range" id="volumeRange" min="0" max="1" step="0.01" class="visibility" value="1">
+       <i id="volume" class="fas fa-volume-up" title="Volume"></i>
+     </div>
+      <div class="image"></div>
+      <i id="download" title="Download current song" class="fas fa-download"></i>
+      <div class="song-name" num="14"></div>
+      <div class="slider">
+        <span class="startTime">00:00</span>
+        <input type="range" class="range" name="vol" min="0" value="0" /><span
+          class="endTime"
+          >00:00</span
+        >
+      </div>
+      <div class="tools">
+        <i id="backward" title="Backward" class="fas fa-step-backward"></i>
+        <i id="play" title="Play" class="fas fa-play"></i>
+        <i id="pause" title="Pause" class="fas fa-pause hide"></i>
+        <i id="forward" title="Forward" class="fas fa-step-forward"></i>
+      </div>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>
