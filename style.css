@@ -1,0 +1,281 @@
+body {
+  margin: 0%;
+  padding: 0%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  flex-direction: column;
+  background: linear-gradient(
+    to right,
+    #85586F,
+    #94B49F
+  ); 
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  user-select: none;
+}
+.song-card {
+  height: 500px;
+  width: 400px;
+  position: relative;
+  bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 20px;
+  background: #654ea3; 
+  background: -webkit-linear-gradient(
+    to right,
+    #FFD59E,
+    #85586F
+  );
+  background: linear-gradient(
+    to right,
+    #FFD59E,
+    #85586F
+  ); 
+  box-shadow: 40px 40px 40px rgba(0, 0, 0, 0.8);
+}
+.image {
+  background: url("Songs/Images/You.jpg");
+  background-repeat: no-repeat;
+  height: 209px;
+  width: 312px;
+  background-position: center center;
+  position: relative;
+  top: 3rem;
+  background-size: cover;
+  border: none;
+  border-radius: 20px;
+}
+.tools {
+  display: flex;
+  position: relative;
+  top: 4.5rem;
+  justify-content: center;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+}
+i {
+  font-size: 50px;
+  margin: 10px 36px;
+  -webkit-tap-highlight-color: transparent;
+}
+.hide {
+  display: none;
+}
+
+.slider {
+  display: flex;
+  position: relative;
+  top: 61px;
+  justify-content: space-between;
+  width: 90%;
+}
+.range {
+  width: 70%;
+  -webkit-appearance: none;
+  height: 15px;
+  background: #d3d3d3;
+  border-radius: 50px;
+}
+.fa-play,
+.fa-pause {
+  position: relative;
+  left: 4px;
+}
+
+.song-name {
+  position: relative;
+  top: 2.7rem;
+  font-size: 39px;
+  transition: all 0.2s ease;
+}
+h1{
+  position: relative;
+  bottom: 2rem;
+  font-size: 46px;
+  font-weight: bolder;
+  user-select: none;
+}
+
+.list{
+  background: url('https://i.pinimg.com/474x/1e/9d/c2/1e9dc24db36c9226da76585bd0314b19.jpg');
+  border-radius:50% ;
+  background-position: center;
+  background-size: cover;
+  height: 50px;
+  width: 50px;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  cursor: pointer;
+  color: black;
+}
+
+.listMusic{
+  position: absolute;
+  top: 80px;
+  left: 50px;
+  background-color: whitesmoke;
+  border-radius:20px ;
+  height: auto;
+  width: 250px;
+
+}
+
+.listMusic li{
+  list-style-type:circle;
+  position: relative;
+  left: 10px;
+  margin: 10px 0px;
+}
+.listMusic li:hover{
+  color: blue;
+  user-select: none;
+  cursor: pointer;
+}
+
+
+.fa-times{
+  font-size: 20px;
+  position: absolute;
+  top: -2px;
+  right: -25px;
+  height: 20px;
+  width: 20px;
+  display: inline;
+  cursor: pointer;
+}
+.fa-times:hover{
+  color: red;
+}
+
+.track{
+  position: absolute;
+  font-size: 15px;
+  font-family:cursive;
+  top: 8px;
+  left: 10px;
+  font-weight: bolder;
+  color: darkblue;
+  text-transform: uppercase;
+  letter-spacing: 0.2px;
+}
+#volume{
+  font-size:20px;
+  margin: -8px;
+  cursor: pointer;
+  position: absolute;
+  right:3rem;
+  -webkit-tap-highlight-color: transparent;
+}
+#volumeRange{
+  width: 60%;
+  margin-right: 20px;
+  margin-top: 5px;
+  cursor: pointer;
+  border-radius: 50px;
+}
+.volumeDiv{
+  width:100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 1.5rem;
+  margin: -10px;
+  position:relative;
+  top: 20px;
+}
+.visibility{
+  visibility:hidden;
+}
+
+
+input[type=range]{
+  -webkit-appearance: none;
+}
+
+input[type=range]::-webkit-slider-runnable-track {
+  width: 300px;
+  height: 5px;
+  background: #ddd;
+  border: none;
+  border-radius: 3px;
+}
+
+#download{
+  font-size: 30px;
+  position: relative;
+  top: 50px;
+  cursor: pointer;
+}
+
+input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  border: none;
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  background: blue;
+  margin-top: -5px;
+}
+
+input[type=range]:focus {
+  outline: none;
+}
+
+input[type=range]:focus::-webkit-slider-runnable-track {
+  background: #ccc;
+}
+
+#volumeValue{
+  position: relative;
+  right:10px;
+  background:rgba(256, 256, 256, 0.3);
+  padding: 2px;
+  border-radius: 5px;
+}
+
+.startTime,
+.endTime{
+  background:rgba(245, 245, 245, 0.644);
+  padding-left: 5px;
+  padding-right: 5px;
+  border-radius: 10px;
+  opacity: 0.9;
+}
+.startTime{
+  margin-right: 10px;
+}
+.endTime{
+  margin-left: 10px;
+}
+ /* small changes for phones */
+@media screen and (max-width:835px){
+  .list,.listMusic{
+      display: none;
+  }
+  .song-name::before{
+    content: "("attr(num)" Tracks)" ;
+    position: absolute;
+    font-size: 15px;
+    top: 45px;
+    text-align: center;
+    width: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .song-name{
+    font-size: 35px;
+  }
+  .slider{
+    top: 81px;
+  }
+  .tools{
+    top: 5.5rem;
+  }
+}
+
+
+
